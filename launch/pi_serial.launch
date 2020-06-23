@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+<machine name="jetson" address="10.42.0.19" />
+
+<node name="encoder_node" pkg="carkyo_dbw" type="encoder.py" output="screen"/>
+<node name="main_control_node" pkg="carkyo_dbw" type="new_mainControl_DAC.py" output="screen"/> 
+
+</launch>
